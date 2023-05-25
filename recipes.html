@@ -4,27 +4,376 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style1.css" />
     <title>All recipes</title>
   </head>
   <body>
-    <h1>Recipes</h1>
+    <div class="container">
+      <h1>Recipes</h1>
+      <div class="search-input">
+        <ion-icon class="icon" name="search-outline"></ion-icon>
+        <input type="text" placeholder="Search..." />
+      </div>
 
-    <ul class="recipe-list">
-      <li>Recipe 1</li>
-      <li>Recipe 2</li>
-      <li>Recipe 3</li>
-      <li>Recipe 4</li>
-      <li>Recipe 5</li>
-      <li>Recipe 6</li>
-      <li>Recipe 7</li>
-      <li>Recipe 8</li>
-      <li>Recipe 9</li>
-      <li>Recipe 10</li>
-      <li>Recipe 11</li>
-      <li>Recipe 12</li>
-      <li>Recipe 13</li>
-      <li>Recipe 14</li>
-      <li>Recipe 15</li>
-    </ul>
+      <ul class="recipe-list container1">
+        <li class="list-rec">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a35421563/baked-feta-pasta-tiktok/"
+          >
+            Baked feta pasta
+          </a>
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/delish-210212-feta-pasta-007-ab-1613747029.jpg?crop=0.668xw:1.00xh;0.138xw,0&resize=980:*"
+            alt="baked pasta"
+          />
+        </li>
+        <li class="list-rec">
+          <img
+            src="https://hips.hearstapps.com/del.h-cdn.co/assets/16/07/1455837174-delish-slow-cooker-chicken-1.jpg?resize=980:*"
+            alt="Parmesan chicken"
+          />
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a42399256/spicy-coconut-grilled-chicken-recipe/"
+          >
+            Grilled chicken</a
+          >
+        </li>
+        <li class="list-rec">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a25336945/instant-pot-vegetable-soup/"
+          >
+            Vegetable soup</a
+          >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/delish-instant-pot-vegetable-soup-135-1544033308.jpg?crop=0.933xw:0.622xh;0.0345xw,0.291xh&resize=980:*"
+            alt="Vegetable soup"
+          />
+        </li>
+        <li class="list-rec">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/eclair-cake-4-1649174898.jpeg?crop=0.937xw:0.862xh;0.0408xw,0.0561xh&resize=1200:*"
+            alt="Eclair cake"
+          />
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a39077917/eclair-cake-recipe/"
+          >
+            Eclair cake</a
+          >
+        </li>
+        <li class="list-rec">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a27211333/instant-pot-chicken-breasts-recipe/"
+          >
+            Chicken breasts</a
+          >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/spicy-coconut-grilled-chicken-1672870819.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*"
+            alt="grilled chicken"
+          />
+        </li>
+        <li class="list-rec">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/delish-paleo-chili-026-2-1543872140.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*"
+            alt="paleo-chili"
+          />
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a25351108/paleo-chili-recipe/"
+          >
+            Paleo chili</a
+          >
+        </li>
+        <li class="list-rec">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a25846375/heart-shaped-cake-recipe/"
+          >
+            Heart shaped cake</a
+          >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/heart-shaped-cake-038-1-1547837655.jpg?crop=0.668xw:1.00xh;0.193xw,0&resize=980:*"
+            alt="Heart shaped cake"
+          />
+        </li>
+        <li class="list-rec" data-category="salad">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/shrimpsaladvertical-jpg-1523572727.jpg?crop=1.00xw:0.667xh;0,0.300xh&resize=980:*"
+            alt="shrimp-salad"
+          />
+          <a
+            href="hhttps://www.delish.com/cooking/recipe-ideas/a19694857/best-shrimp-salad-recipe/"
+          >
+            Shrimp salad</a
+          >
+        </li>
+        <li class="list-rec">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/recipes/a58283/best-carrot-cake-recipe/"
+          >
+            Carrot cake</a
+          >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/carrot-cake-secondary-641a055dba8e5.jpg?crop=0.9994256174612292xw:1xh;center,top&resize=980:*"
+            alt="Carrot cake"
+          />
+        </li>
+        <li class="list-rec" data-category="salad">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/avocado-salad-1524672116.png?crop=1xw:1xh;center,top&resize=980:*"
+            alt=" Avocado tomato salad"
+          />
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a19872947/avocado-tomato-salad-recipe/"
+          >
+            Avocado tomato salad</a
+          >
+        </li>
+        <li class="list-rec" data-category="salad">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a19484613/cobb-egg-salad-recipe/"
+          >
+            Cobb egg salad</a
+          >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/190328-cobb-egg-salad-224-1554926334.jpg?crop=1xw:1xh;center,top&resize=980:*"
+            alt="cobb egg salad"
+          />
+        </li>
+        <li class="list-rec">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/cheesy-asparagus-stuffed-chicken-lead-643021f0b7b97.jpg?crop=1xw:1xh;center,top&resize=1200:*"
+            alt="Cheesy asparagus stuffed chicken"
+          />
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a43414236/cheesy-asparagus-stuffed-chicken-recipe/"
+          >
+            Cheesy asparagus stuffed chicken</a
+          >
+        </li>
+        <li class="list-rec" data-category="salad">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a40036560/burrata-salad-recipe/"
+          >
+            Burrata salad</a
+          >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/burrata-salad3-1654284047.jpg?crop=1.00xw:0.667xh;0,0.200xh&resize=980:*"
+            alt="Burrata salad"
+          />
+        </li>
+        <li class="list-rec">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/220713-delish-seo-01-napoleon-cake-vertical-063-eb-1658416693.jpg?resize=980:*"
+            alt="Napoleon cake"
+          />
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a40533051/napoleon-cake-recipe/"
+          >
+            Napoleon cake</a
+          >
+        </li>
+        <li class="list-rec">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a43051815/apple-crisp-recipe/"
+          >
+            Apple crisp</a
+          >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/apple-crisp-lead-6435c97008904.jpg?resize=1200:*"
+            alt="Apple crisp"
+          />
+        </li>
+        <li class="list-rec" data-category="salad">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/pesto-pasta-saladpin-1649262751.jpg?crop=0.663xw:0.418xh;0.337xw,0.393xh&resize=980:*"
+            alt="pesto pasta salad"
+          />
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a39505192/pesto-pasta-salad-recipe/"
+          >
+            Pesto pasta salad</a
+          >
+        </li>
+        <li class="list-rec" data-category="salad">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a25136514/chicken-pasta-salad/"
+          >
+            Chicken pasta salad</a
+          >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/delish-chicken-pasta-salad-273-1543266433.jpg?crop=1xw:0.9166666666666666xh;center,top&resize=980:*"
+            alt="Chicken pasta salad"
+          />
+        </li>
+        <li class="list-rec">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/tiramisu-cake3-1657209976.jpg?crop=0.9997369113391213xw:1xh;center,top&resize=980:*"
+            alt="Tiramisu cake"
+          />
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a29359451/tiramisu-cake-recipe/"
+          >
+            Tiramisu cake</a
+          >
+        </li>
+
+        <li class="list-rec">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/recipes/a49705/cheesy-baked-burritos-recipe/"
+          >
+            Baked burritos</a
+          >
+          <img
+            src="https://hips.hearstapps.com/del.h-cdn.co/assets/17/48/1511979259-cheesy-baked-burritos-delish.jpg?resize=980:*"
+            alt=" Baked burritos"
+          />
+        </li>
+        <li class="list-rec">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/211104-delish-seo-garlic-mash-potatoes-vertical-v2-0078-eb-1636756962.jpg?crop=0.810xw:0.886xh;0.190xw,0&resize=980:*"
+            alt="
+          Garlic mashed potatoes"
+          />
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/recipes/a52468/roasted-garlic-mashed-potatoes/"
+          >
+            Garlic mashed potatoes</a
+          >
+        </li>
+        <li class="list-rec">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a42806306/copycat-dairy-queen-ice-cream-cake-recipe/"
+          >
+            Ice cream cake
+          </a>
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/delish-230227-dairy-queen-ice-cream-cake-001-ab-lead-6413acb76b51f.jpg?resize=1200:*"
+            alt="Ice cream cake"
+          />
+        </li>
+        <li class="list-rec">
+          <img
+            src="https://www.crunchycreamysweet.com/wp-content/uploads/2018/11/instant-pot-bacon-Brussels-sprouts-4.jpg"
+            alt="Bacon brussels sprouts"
+          />
+          <a
+            href="https://www.crunchycreamysweet.com/instant-pot-bacon-brussels-sprouts/"
+          >
+            Bacon brussels sprouts</a
+          >
+        </li>
+        <li class="list-rec">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a38699256/one-pot-broccoli-cheese-pasta-recipe/"
+          >
+            Broccoli cheese pasta</a
+          >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/delish-211218-one-pot-broccoli-cheese-pasta-002-ab-web-1641596338.jpg?crop=0.823xw:0.832xh;0.0748xw,0.0891xh&resize=1200:*"
+            alt="Broccoli cheese pasta"
+          />
+        </li>
+        <li class="list-rec">
+          <img
+            src="https://natashaskitchen.com/wp-content/uploads/2018/06/No-Bake-Cheesecake-Recipe-5.jpg"
+            alt="Cheese cake"
+          />
+          <a href="https://natashaskitchen.com/no-bake-cheesecake-recipe/">
+            Cheese cake</a
+          >
+        </li>
+        <li class="list-rec">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a58500/strawberry-chocolate-mousse-cake-recipe/"
+          >
+            Chocolate mousse cake</a
+          >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/strawberry-chocolate-mousse-cake3-1674249121.jpg?crop=1.00xw:0.801xh;0,0.116xh&resize=980:*"
+            alt="Chocolate mousse cake"
+          />
+        </li>
+        <li class="list-rec" data-category="salad">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/summer-couscous-salad-lead-6414974a4f449.jpg?crop=1xw:1xh;center,top&resize=1200:*"
+            alt="Couscous salad"
+          />
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a43174670/summer-couscous-salad-recipe/"
+          >
+            Couscous salad</a
+          >
+        </li>
+        <li class="list-rec" data-category="salad">
+          <a
+            href="https://www.simplyrecipes.com/recipes/caesar_salad/"
+            id="salad"
+          >
+            Caesar salad</a
+          >
+          <img
+            src="https://www.simplyrecipes.com/thmb/Sc3z6cOpZ8dlxRXMFbOZ-R0k39U=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Simply-Recipes-Caesar-Salad-LEAD-07-01d96a42f43941748b81d910a10888cd.jpg"
+            alt="Caesar salad"
+          />
+        </li>
+        <li class="list-rec">
+          <img
+            src="https://www.allrecipes.com/thmb/resvgswnsI0RQEyDYQ9Z0hiB3kM=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/85389-gourmet-mushroom-risotto-DDMFS-4x3-a8a80a8deb064c6a8f15452b808a0258.jpg"
+            alt="risotto"
+          />
+          <a
+            href="https://www.allrecipes.com/recipe/85389/gourmet-mushroom-risotto/"
+          >
+            Risotto</a
+          >
+        </li>
+        <li class="list-rec" data-category="salad">
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/recipes/a54226/best-greek-salad-recipe/"
+          >
+            Greek salad</a
+          >
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/greek-salad-secondary-642f292426c10.jpg?crop=1xw:1xh;center,top&resize=980:*"
+            alt="Greek salad"
+          />
+        </li>
+        <li class="list-rec">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/lemon-blueberry-cheesecake-lead-644fdd2310263.jpg?crop=1xw:1xh;center,top&resize=1200:*"
+            alt="Lemon-Blueberry Cheesecake"
+          />
+          <a
+            href="https://www.delish.com/cooking/recipe-ideas/a43710680/lemon-blueberry-cheesecake-recipe/"
+          >
+            Lemon-Blueberry Cheesecake</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ion-icon
+        class="scroll"
+        name="arrow-up-circle-outline"
+        onclick="scrollToTop()"
+      ></ion-icon>
+      <!-- <ion-icon class="down" name="arrow-down-circle-outline"></ion-icon> -->
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="blog.js"></script>
   </body>
 </html>

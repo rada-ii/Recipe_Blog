@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="general.css" .css">
+    <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="style.css" />
     <title>Recipe - Blog</title>
   </head>
@@ -51,26 +51,23 @@
                 Our top recipes &rarr;
               </h1>
             </div>
-            <a class="food-img">
+            <a class="food-img" href="https://natashaskitchen.com/no-bake-cheesecake-recipe/">
               <img src="img/cheesecake.jpg" alt="Cheesecake photo" />
               <p>Cheese Cake</p>
             </a>
 
-            <a class="food-img">
+            <a class="food-img" href="https://www.simplyrecipes.com/recipes/caesar_salad/">
               <img src="img/cesar.jpg" alt="Cesar photo" />
-              <p>Cesar Salad</p>
+              <p class="food-link">Caesar Salad</p>
             </a>
 
-            <a class="food-img">
+            <a class="food-img" href="https://www.allrecipes.com/recipe/85389/gourmet-mushroom-risotto/">
               <img src="img/risotto.jpg" alt="Risotto photo" />
               <p>Risotto</p>
             </a>
           </div>
 
-          <div class="search-input">
-            <ion-icon class="icon" name="search-outline"></ion-icon>
-            <input type="text" placeholder="Search..." />
-          </div>
+      
         </div>
       </section>
 
@@ -88,7 +85,7 @@
               <img src="img/fruty-chocho.jpg" alt="Cake photo" />
               <img src="img/pastry.jpg" alt="Cake photo" />
             </div>
-            <a class="cake-text">&larr;Sweets</a>
+            <a class="cake-text" href="recipes.html">&larr;Sweets</a>
           </div>
        </div>
       </section>
@@ -96,7 +93,7 @@
       <section class="sweets-sec" id="salad">
         <div class="container">
           <div class="sweets sweet-sec recipes last">
-            <a class="cake-text">Salads &rarr;</a>
+            <a class="cake-text" href="recipes.html">Salads &rarr;</a>
             <div class="cake-imgs">
               <img src="img/salad1.jpg" alt="Salad photo" />
               <img src="img/salad2.jpg" alt="Salad photo" />
@@ -122,7 +119,7 @@
               <img src="img/meal5.jpg" alt="Meal photo" />
               <img src="img/meal6.jpg" alt="Meal photo" />
             </div>
-            <a class="cake-text">&larr; Meals</a>
+            <a class="cake-text" href="recipes.html">&larr; Meals</a>
           </div>
         </div>
       </div>
@@ -221,7 +218,7 @@
                     >How do you wanna receive recipes?</label
                   >
                   <select id="select-where" required>
-                    <option value="">Please choose one option:</option>
+                    <option value="" class="select-value">Please choose one option:</option>
                     <option value="daily">Daily</option>
                     <option value="weekly">Weekly</option>
                     <option value="monthly">Monthly</option>
@@ -231,41 +228,43 @@
                 <button class="btn btn--form">Sign up now & enjoy!</button>
               </form>
             </div>
-            <!-- <div
-              class="cta-img-box"
-              role="img"
-              aria-label="Woman enjoying food"
-            ></div> -->
+         
           </div>
         </div>
       </section>
+      <ion-icon class="scroll scroll-up" name="arrow-up-circle-outline" onclick="scrollToTop()"></ion-icon>
+      <ion-icon class="scroll scroll-down" name="arrow-down-circle-outline" onclick="scrollToBottom()"></ion-icon>
+      
     </main>
 
     <footer class="footer">
       <div class="container grid grid--footer">
       
-          <p class="copyright">Copyright &copy; 2023 By Radmila Ivankovic</p>
+          <p class="copyright">Copyright &copy; <span class="year">2023</span> By Radmila Ivankovic</p>
         
 
           <ul class="social-links">
             <p class="copyright contacts">Contacts:</p>
             
             <li class="contact">
+              <a class="footer-link" href="https://www.linkedin.com/in/rada-ivankovi%C4%87-52621b74/"
+                >
               <ion-icon class="social-icon" name="logo-linkedin"></ion-icon
                 >
-              <a class="footer-link" href="https://www.linkedin.com/in/rada-ivankovi%C4%87-52621b74/"
-                >&nbsp; My linkedin</a>
+              &nbsp; My linkedin</a>
             </li>
             <li class="contact">
+              <a class="footer-link" href="https://github.com/rada-ii?tab=repositories"
+                >
               <ion-icon class="social-icon" name="logo-github"></ion-icon
-                ><a class="footer-link" href="https://github.com/rada-ii?tab=repositories"
                 >&nbsp; My github</a>
             </li>
             <li class="contact">
+              <a class="footer-link" href="mailto:ra.da@live.com"
+                >
               <ion-icon class="social-icon" name="mail-outline"></ion-icon
                 >
-              <a class="footer-link" href="mailto:ra.da@live.com"
-                >&nbsp; ra.da@live.com</a>
+              &nbsp; ra.da@live.com</a>
             </li>
           </ul>
         </div>
@@ -279,6 +278,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-    <script src="blog.js"></script>
+    <script src="blog1.js"></script>
+    
+    
   </body>
 </html>

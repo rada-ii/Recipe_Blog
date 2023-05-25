@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.container {
+  /* 1140px */
+  max-width: 130rem;
+  padding: 3.2rem;
+  margin: 8rem auto;
+  background-color: #e6fcf5;
+  border-radius: 1rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  font-size: 4.8rem;
+  text-align: center;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  margin-bottom: 4.8rem;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border-bottom: 1px solid #555;
+}
+
+.search-input input[type="text"] {
+  border: none;
+  outline: none;
+  background-color: #e6fcf5;
+  /* width: 100%; */
+  margin-left: 2rem;
+  padding: 0 3.2rem;
+  font-size: 2.4rem;
+}
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: -5rem;
+}
+
+ul {
+  list-style: none;
+  font-size: 3.2rem;
+  line-height: 1.6;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6.4rem;
+}
+
+.list-rec:nth-child(odd) {
+  margin-right: auto;
+}
+
+.list-rec:nth-child(even) {
+  margin-left: auto;
+  margin-top: -11.2rem;
+}
+
+.list-rec {
+  padding: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-rec a:link,
+.list-rec a:visited {
+  text-decoration: none;
+  color: #474747;
+}
+
+.list-rec a:hover,
+.list-rec a:active {
+  /* text-decoration: dotted; */
+  /* color: #583110; */
+  color: #e67e22;
+}
+
+img {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+}
+
+a {
+  padding: 0 2.4rem;
+}
+
+.scroll {
+  width: 3rem;
+  height: 3rem;
+  display: none;
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
+  cursor: pointer;
+}
+
+/* .scroll.show {
+  display: block;
+} */

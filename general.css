@@ -91,6 +91,9 @@ body {
   max-width: 130rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+  position: relative;
+  /* max-width: 100%; */
+  overflow: hidden;
 }
 
 .grid {
@@ -227,8 +230,8 @@ body {
 }
 
 .btn--form:hover {
-  background-color: #fff;
-  color: #555;
+  background-color: #114133;
+  color: #eb984e;
 }
 
 .link:link,
