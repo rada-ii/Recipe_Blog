@@ -9,19 +9,10 @@
   background-color: #e6fcf5;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
-
-  /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 3.2rem;
-  /* position: relative; */
   margin-bottom: 6.4rem;
-
-  /* padding: 0 3.2rem; */
 }
-
-/* .logo {
-  height: 2.2rem;
-} */
 
 /**************************/
 /* NAVIGATION */
@@ -105,8 +96,9 @@
 /**************************/
 
 .food-img img {
+  max-width: 100%;
   width: 100%;
-  height: 100%;
+  height: auto !important;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -381,19 +373,22 @@ a {
   height: 3rem;
   display: none;
   position: fixed;
-  bottom: 5rem;
   right: 3rem;
   cursor: pointer;
+  color: #888;
+  /* padding-left: 1rem; */
+}
+
+.scroll-down {
+  bottom: 5rem;
 }
 
 .scroll-up {
-  width: 3rem;
-  height: 3rem;
-  display: none;
-  position: fixed;
   bottom: 8rem;
-  right: 3rem;
-  cursor: pointer;
+}
+
+.scroll:hover {
+  color: #69a997;
 }
 
 /**************************/
@@ -417,7 +412,7 @@ a {
 }
 
 .contacts {
-  margin-right: -7rem;
+  margin-right: -5rem;
 }
 
 .social-icon {

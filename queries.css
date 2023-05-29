@@ -1,0 +1,120 @@
+/**************************/
+/* BELOW 1232px (smaller desktops */
+/**************************/
+@media (max-width: 77em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .container {
+    max-width: 120rem;
+  }
+
+  .cake-imgs img {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  .scroll {
+    right: 1rem;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .contacts {
+    margin-right: -1.5rem;
+  }
+}
+
+/**************************/
+/* BELOW 1072px (landscape tablets */
+/**************************/
+@media (max-width: 67em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+.grid {
+  column-gap: 4.8rem;
+  row-gap: 6.4rem;
+
+  /* margin-bottom: 9.6rem; */
+}
+/**************************/
+/* BELOW 960px (landscape tablets */
+/**************************/
+@media (max-width: 60em) {
+  html {
+    font-size: 40%;
+  }
+
+  .hero,
+  .testimonials-sec {
+    padding: 9.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 768px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 48em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+
+  .testimonials-sec {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .testimonial-text,
+  .testimonial-name {
+    font-size: 3rem;
+  }
+
+  .testimonials-img {
+    width: 12.8rem;
+  }
+
+  .contacts {
+    margin-right: 0;
+  }
+
+  .food-img p {
+    font-size: 4.8rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .main-nav-link,
+  .nav-logo {
+    font-size: 2.4rem;
+  }
+
+  .sweets {
+    /* flex-direction: column; */
+  }
+
+  .social-links {
+    justify-content: space-evenly;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: 37fr 63fr;
+  }
+}
+/*- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+/*- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/

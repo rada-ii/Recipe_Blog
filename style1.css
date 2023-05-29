@@ -122,13 +122,23 @@ a {
 .scroll {
   width: 3rem;
   height: 3rem;
-  display: none;
   position: fixed;
-  bottom: 5rem;
-  right: 3rem;
+
   cursor: pointer;
+  color: #888;
 }
 
-/* .scroll.show {
-  display: block;
-} */
+.up {
+  display: none;
+  bottom: 5rem;
+  right: 3rem;
+}
+
+.back {
+  top: 5rem;
+  left: 3rem;
+}
+
+.scroll:hover {
+  color: #69a997;
+}

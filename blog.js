@@ -60,3 +60,10 @@ window.addEventListener("scroll", function () {
 function scrollToTop() {
   window.scrollTo({ top: 20, behavior: "smooth" });
 }
+
+// JavaScript
+const backIcon = document.querySelector(".back");
+
+backIcon.addEventListener("click", () => {
+  window.location.href = "index.html";
+});
