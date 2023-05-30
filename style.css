@@ -3,15 +3,20 @@
 /**************************/
 
 .header {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   background-color: #e6fcf5;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   height: 9.6rem;
-  padding: 0 3.2rem;
+  padding: 2.4rem 3.2rem 6rem 3.2rem;
+
+  margin: 0 auto;
   margin-bottom: 6.4rem;
+
+  max-width: 120rem;
+  position: relative;
 }
 
 /**************************/
@@ -30,7 +35,8 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4.8rem;
+  gap: 3.2rem;
+  justify-content: space-between;
 }
 
 .main-nav-link:link,
@@ -65,11 +71,7 @@
 .all-rec:hover,
 .all-rec:active {
   background-color: #cf711f;
-}
-.header.sticky {
-  position: fixed;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Additional styles for the sticky header */
+  color: #fff;
 }
 
 /* MOBILE */
@@ -91,6 +93,8 @@
   display: none;
 }
 
+/* STICKY NAVIGATION */
+/* 
 /**************************/
 /* HERO SECTION */
 /**************************/
@@ -184,7 +188,7 @@ a {
   border-radius: 50%;
   margin-right: -2rem;
   border: 3px solid #c3fae8;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .cake-imgs img:last-child {
@@ -409,6 +413,7 @@ a {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .contacts {
@@ -425,12 +430,6 @@ a {
   line-height: 1.6;
   color: #767676;
   margin-top: auto;
-}
-
-.footer-heading {
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin-bottom: 4rem;
 }
 
 .footer-link {
